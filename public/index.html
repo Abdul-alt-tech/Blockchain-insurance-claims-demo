@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Security-Policy" 
+      content="default-src 'self';
+               script-src 'self' 'unsafe-eval' https://cdn.ethers.io;
+               connect-src 'self' https://*.infura.io https://*.alchemyapi.io;
+               frame-src 'self' https://*.metamask.io;
+               style-src 'self' 'unsafe-inline';
+               img-src 'self' data:;">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blockchain Insurance Demo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 20px;
+      color: #333;
+    }
+    header {
+      margin-bottom: 30px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #eee;
+    }
+    .insurer-badge {
+      color: green;
+      font-weight: bold;
+    }
+    .policy-list ul {
+      list-style: none;
+      padding: 0;
+    }
+    .policy-list li {
+      background: #f4f4f4;
+      margin: 10px 0;
+      padding: 15px;
+      border-radius: 5px;
+    }
+    .claim-form {
+      background: #f4f4f4;
+      padding: 20px;
+      border-radius: 5px;
+      margin-top: 30px;
+    }
+    .claim-form label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    .claim-form input,
+    .claim-form textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 15px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+    .claim-form button {
+      background: #333;
+      color: #fff;
+      border: 0;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    .claim-form button:hover {
+      background: #555;
+    }
+    .dashboard {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.create-policy-form, .policy-section, .claim-section, .claims-list {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+th, td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #f5f5f5;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  margin-right: 0.5rem;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+button:disabled {
+  background: #cccccc;
+  cursor: not-allowed;
+}
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+</body>
+</html>
